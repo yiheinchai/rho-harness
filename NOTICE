@@ -1,0 +1,5 @@
+Rho’s agent loop, tool hooks, and streaming events are modeled on the MIT-licensed
+Pi agent harness (https://github.com/earendil-works/pi) and on the public design of
+OpenCode (https://github.com/anomalyco/opencode). This repository does not contain
+source from those projects. It is a domain fork: the same harness ideas, rebuilt for
+customer-facing enterprise workflows instead of coding agents.

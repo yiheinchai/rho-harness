@@ -1,0 +1,10 @@
+node_modules
+dist
+.rho
+coverage
+*.log
+.env
+.env.local
+.DS_Store
+agent-tools
+.cursor
