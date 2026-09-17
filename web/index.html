@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Rho — Guest lane</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="app">
+      <aside class="rail">
+        <div class="brand-mark">ρ</div>
+        <div>
+          <p class="eyebrow">Rho harness</p>
+          <h1 id="brand-name">Arcade Burgers</h1>
+          <p id="brand-tagline" class="tagline">Order at the counter — from anywhere.</p>
+        </div>
+        <label class="field">
+          <span>Workflow</span>
+          <select id="workflow"></select>
+        </label>
+        <p class="provider" id="provider">provider · mock</p>
+        <div class="order-board" id="orders">
+          <p class="eyebrow">Now serving</p>
+          <p class="empty">No tickets yet</p>
+        </div>
+        <p class="disclaimer" id="disclaimer"></p>
+      </aside>
+
+      <main class="lane">
+        <header class="lane-head">
+          <div>
+            <p class="eyebrow" id="store-line">Guest lane</p>
+            <h2>Talk to the store, not a chatbot</h2>
+          </div>
+          <button id="new-session" type="button">New session</button>
+        </header>
+        <div id="log" class="log" aria-live="polite"></div>
+        <div id="suggestions" class="suggestions"></div>
+        <form id="composer" class="composer">
+          <input id="input" autocomplete="off" placeholder="“Two cheeseburgers, no pickles, large fries, Coke, pickup”" />
+          <button type="submit">Send</button>
+        </form>
+      </main>
+
+      <aside class="bag">
+        <p class="eyebrow">Bag</p>
+        <div id="cart" class="cart-body">
+          <p class="empty">Your bag is empty.</p>
+        </div>
+        <div id="trace" class="trace"></div>
+      </aside>
+    </div>
+    <script src="/app.js" type="module"></script>
+  </body>
+</html>

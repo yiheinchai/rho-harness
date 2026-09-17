@@ -1,0 +1,29 @@
+{
+  "name": "rho-harness",
+  "version": "0.1.0",
+  "description": "Production customer-workflow harness forked from the Pi/OpenCode agent model for enterprise guest experiences.",
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "start": "tsx src/cli.ts serve",
+    "dev": "tsx watch src/cli.ts serve",
+    "chat": "tsx src/cli.ts chat",
+    "demo": "tsx src/cli.ts demo",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.13.8",
+    "hono": "^4.6.14"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2",
+    "vitest": "^3.0.5"
+  }
+}
